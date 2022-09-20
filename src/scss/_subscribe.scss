@@ -1,0 +1,60 @@
+.subscribe {
+    background-color: $primaryColor;
+    padding-top: 40px;
+
+}
+.subscribe__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 10px;
+
+    h5{
+        @include fontMain($color: $fourthColor, $fz: 16px, $lh: 20px, $weight: 600);
+        font-family: 'Cerebri Sans','Ubuntu';
+        margin-bottom: 12px;
+        
+    }
+    h3{
+        @include fontMain($color: #212226, $fz: 40px, $lh: 64px, $weight: 700);
+        margin-bottom: 27px;
+        font-family: 'Ubuntu';
+        text-align: center;
+        @media (max-width:500px) {
+            @include fontMain($color: #212226, $fz: 30px, $lh: 44px, $weight: 700);
+    
+        }
+    }
+}
+.subscribe__button {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FC3867;
+    border-radius: 87px;
+
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 40px;
+
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        box-shadow: 2px 2px 10px #FC3867;
+    }
+    @media (max-width:500px) {
+        width: 140px;
+        height: 50px;
+    }
+}

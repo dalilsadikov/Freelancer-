@@ -1,0 +1,41 @@
+$bigMaxWidth:1200px;
+$maxWidth :1140px;
+
+
+$primaryColor:#FFFFFF;
+$secondaryColor : #272727;
+$thirdColor : #646464;
+$fourthColor: #C4C4C4;
+$fiveColor : #999999;
+
+$bgColor :#040F28;
+$footerColor : #070707;
+
+$buttonColor : #FC3867;
+
+$mainFont: 'Ubuntu', sans-serif;
+
+h1,h2,h3,h4,h5,h6,a,div,p,span{
+    font-family: $mainFont;
+}
+
+
+@mixin h1 {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 74px;
+
+    color: $fourthColor;
+
+}
+@mixin fontMain($weight:700,$fz:20px,$lh:23px,$color: $primaryColor){
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $fz;
+    line-height: $lh;
+    
+    color: $color;
+}
